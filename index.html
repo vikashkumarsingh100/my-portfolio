@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/all.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="row no-gutters">
+        <div class="col-md-4"><img width="100%"src="/Me.jpg" alt="" id="img"></div>
+        <div class="col-md-8 d-flex flex-column  bg-danger">
+           <div class="bg-dark"><h1 class="display-4 justify-content-center align-items-center p-4 text-white">VIKASH KUMAR SINGH</h1></div>
+           <div style="background-color: black;" class="p-lg-4"><h1 class="p4 text-white ml-5" >PURSUING B.TECH</h1></div>
+           <div class="bg-info flex-grow-1 align-items-stretch d-flex flex-row text-white align-items-stretch text-center">   
+            <div class="port-item p-4 bg-primary"data-toggle="collapse" data-target="#home" >
+              <i class="fa fa-home d-block" ></i> Home
+            </div>
+            <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#Resume">
+              <i class="fa fa-graduation-cap d-block"></i> Skills
+            </div>
+            <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#train">
+              <i class="fa fa-folder-open d-block"></i> Training
+            </div>
+            <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
+              <i class="fa fa-envelope d-block"></i> Contact
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="home" class="collapse show">
+      <div class="card card-body bg-primary py-5">
+        <h1 class="text-white" style="text-align: center;">Welcome to my portfolio</h1>
+      </div>
+      
+        <div class="card card-body py-5 bg-dark">
+          <h3 style="text-align: center;" class="text-white">About Me</h3>
+          <h3 class="text-white" style="text-align: center;">My name is VIKASH Kumar SINGH</h3><hr>
+          <div class="row">
+            <div class="col-12"><h3 class="text-white" style="text-align: center;">My Education</h3></div>
+            <div class="col-md-4">
+              <div class="card bg-info">
+                <h2 class="card-body"><h3 class="card-title" style="text-align: center;">Matriculation</h3><h4 class="card-text">M.M.Y.S SCHOOL</h4>
+                  <h6>Gundi,Ara</h6><br>
+                  <h6>10 C.G.P.A</h6>
+                </h2></div> </div>
+            <div class="col-md-4"> <div class="card bg-info">
+              <h2 class="card-body"><h3 class="card-title" style="text-align: center;">Intermediate</h3><h4 class="card-text">M.M.Y.S SCHOOL</h4>
+                <h6>Gundi,Ara</h6><br>
+                <h6>80.6%</h6>
+              </h2></div></div>
+            <div class="col-md-4">
+              <div class="card bg-info">
+                <h2 class="card-body"><h3 class="card-title" style="text-align: center;">B.TECH</h3><h4 class="card-text">National Institute Of Techonology</h4>
+                  <h6>Uttarakhand</h6>
+                  <h6>7.66</h6>
+                </h2></div>
+            </div>
+          </div>
+        
+      </div>
+      
+    </div>
+    <div class="collapse show" id="Resume"><div class="card card-body bg-success text-white py-5">
+      <h5 style="text-align: center;">My Skills</h5>
+      <div class="container">
+        <ul>
+          <li>JAVA</li>
+          <li>ANDROID</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>BOOTSTRAP</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div id="train" class="collapse show" ><div class="card card-body bg-warning text-white py-5">
+      <h5 style="text-align: center;">My Training</h5>
+      <div class="container">
+        <h1>Training In Android in Cetpa Infotech</h1>
+      </div>
+    </div>
+    </div>
+    <div id="contact" class="collapse show" ><div class="card card-body bg-danger text-white py-5">
+      <h1 style="text-align: center;">Contact Me</h1>
+      <div class="container">
+       <ul>
+         <li><h6>Email-vikashsingh8083015337@gmail.com</h6></li>
+         <li><h6>phone-7667432377</h6></li>
+       </ul>
+      </div>
+    </div>
+    </div>
+</div>
+ 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+ <script>
+   $('.port-item').click(function(){
+     $('.collapse').collapse('hide');
+   });
+ </script>   
+</body>
+</html>
